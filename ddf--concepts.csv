@@ -1,0 +1,5 @@
+concept,name,concept_type
+under_five_mortality,Under five mortality,measure
+country,Country,entity_domain
+year,Year,time
+name,Name,string
