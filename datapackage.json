@@ -1,0 +1,62 @@
+{
+    "name": "ddf--gapminder--hist_u5mr",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "primaryKey": "concept",
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--under_five_mortality--by--country--year.csv",
+            "name": "ddf--datapoints--under_five_mortality--by--country--year",
+            "schema": {
+                "primaryKey": [
+                    "country",
+                    "year"
+                ],
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "under_five_mortality"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--country.csv",
+            "name": "ddf--entities--country",
+            "schema": {
+                "primaryKey": "country",
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ]
+            }
+        }
+    ]
+}
